@@ -11,9 +11,7 @@
 - [ ] [#3 P1.3：完成王月出人物档案](https://github.com/yushun1990/monster-flick/issues/3)
 - [ ] [#4 P1.4：完成刘承重人物档案与邪法约束](https://github.com/yushun1990/monster-flick/issues/4)
 - [ ] [#5 P1.5：完成郴竹人物档案与感情线原则](https://github.com/yushun1990/monster-flick/issues/5)
-- [ ] 补完龙默：与张之焘 / 徐辰同代；从长期被王月出压住，到重新找到自己的完整道路；最终具备收拾现实残局的能力
-- [ ] 补完徐辰：地方商武家族背景；“人民艺术家”；组织评价“此人可用，不可大用”；能力、武功和办事都路子野
-- [ ] 补完老医师 / 药师：普通的好人；张之焘无名时便平等对待；后来成为范野长期医师、药师与亦师亦友者
+- [ ] [#9 P1.6：补全龙默、徐辰与老医师](https://github.com/yushun1990/monster-flick/issues/9)
 
 ### 当前最重要的人物关系
 
@@ -64,7 +62,7 @@
 
 ## Next — 世界与正文主线
 
-- [ ] [#6 P2：建立外部江湖与第一卷真实冲突](https://github.com/yushun1990/monster-flick/issues/6)
+- [ ] [#6 P2：建立外部江湖与第一阶段真实冲突](https://github.com/yushun1990/monster-flick/issues/6)
 - [ ] 明确天衡宗 / 齐门 / 海东 / 高丽 / 西洲各自的资源与利益结构
 - [ ] 建立城池、盐路、航线、药材、矿山、商队等能持续产生矛盾的现实网络
 - [ ] 让群众态度出现真实分化：拥护、获利、忍耐、退出、躺平、阳奉阴违、偷偷抵抗、公开反抗
@@ -73,7 +71,7 @@
 
 ## Later — 第一卷 / 第一阶段落地
 
-- [ ] [#7 P4：完成第一卷结构与卷末不可逆变化](https://github.com/yushun1990/monster-flick/issues/7)
+- [ ] [#7 P4：完成离宗开篇与第一阶段结构](https://github.com/yushun1990/monster-flick/issues/7)
 - [ ] 只拆未来 10–15 章 beat sheet
 - [ ] 每章记录：表面事件 / 人物变化 / 新增信息 / 隐藏后果 / 可删性
 - [ ] [#8 P6：完成三组文风样章并建立删稿标准](https://github.com/yushun1990/monster-flick/issues/8)
