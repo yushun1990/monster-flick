@@ -1,0 +1,40 @@
+#+TITLE: 场景库
+
+* 说明
+
+scenes/ 用于保存小说创作过程中已经讨论落地的具体画面。
+
+它不是正式正文，也不是世界观设定。
+
+* 使用方式
+
+一个画面一个文件。
+
+例如：
+
+- five-poisons-before-hunt.org
+- frightened-boy.org
+- fan-ye-escape.org
+
+文件内容可以包含：
+
+- 原始想法。
+- 当前画面版本。
+- REVIEW 批注。
+- 尚未解决的问题。
+
+* 原则
+
+不要为了快速推进章节而强行组合场景。
+
+先积累真正成立的画面，等多个场景形成自然关系后，再讨论章节结构。
+
+* REVIEW
+
+场景继续使用统一 REVIEW 标记体系。
+
+- # REVIEW:
+- # DELETE:
+- # KEEP:
+- # QUESTION:
+- # GLOBAL:
