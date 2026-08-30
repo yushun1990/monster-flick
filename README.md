@@ -15,12 +15,15 @@
 3. [`docs/CHEN_ZHU.md`](docs/CHEN_ZHU.md) —— 郴竹 / 小师妹 / 范野关系；
 4. [`docs/XIAOYAO_PEAK.md`](docs/XIAOYAO_PEAK.md) —— **逍遥峰、南冥峰、北冥峰、缥缈峰，主副峰制度、小师妹治理、清净宗之变、封印与继承**；
 5. [`docs/XIAOYAO_SISTERS_FAN_ARC.md`](docs/XIAOYAO_SISTERS_FAN_ARC.md) —— **小师妹针对郴竹 / 范野信任的长期博弈，以及“不会输、但赢不了”与最终放手**；
-6. [`docs/SWORD_CLASSIC.md`](docs/SWORD_CLASSIC.md) —— 《剑经》、俞大千与剑学；
-7. [`docs/LONGEVITY_METHOD.md`](docs/LONGEVITY_METHOD.md) —— 刘承重长生 / 新法深层机制；
-8. [`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md) —— 作品稳定主题与人物总览；
-9. [`docs/OUTLINE.md`](docs/OUTLINE.md) / [`docs/PLAN.md`](docs/PLAN.md) / [`TASKS.md`](TASKS.md) —— 当前结构与待办。
+6. [`docs/EASTERN_LAND_STORM.md`](docs/EASTERN_LAND_STORM.md) —— **南荆山大会后东土当前强 canon：吴大门、白左使事件、极乐宫暗线、南荆山借刀、李家 / 九岭山 / 中州剑宗深层勾连，以及周影真正入江湖**；
+7. [`docs/SWORD_CLASSIC.md`](docs/SWORD_CLASSIC.md) —— 《剑经》、俞大千与剑学；
+8. [`docs/LONGEVITY_METHOD.md`](docs/LONGEVITY_METHOD.md) —— 刘承重长生 / 新法深层机制；
+9. [`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md) —— 作品稳定主题与人物总览；
+10. [`docs/OUTLINE.md`](docs/OUTLINE.md) / [`docs/PLAN.md`](docs/PLAN.md) / [`TASKS.md`](TASKS.md) —— 当前结构与待办。
 
 **优先级原则：专项人物 / 设定文档覆盖旧总纲；`CANON_CURRENT.md` 覆盖所有尚未同步的历史文本。**
+
+> **东土阶段临时覆盖规则（2026-08-30）：** `EASTERN_LAND_STORM.md` 已更新为南荆山大会之后的最新强 canon；在 `CANON_CURRENT.md` 尚未完成同步前，凡涉及“东土是否继续围绕争夺范野运转、白左使事件、极乐宫 / 南荆山 / 李家 / 九岭山暗线、范野重塑气海、郴竹最终离开逍遥峰”等内容，以 `EASTERN_LAND_STORM.md` 为准。
 
 Git 历史保留旧方案，但旧方案不再自动拥有 canon 地位。
 
@@ -154,6 +157,7 @@ Git 历史保留旧方案，但旧方案不再自动拥有 canon 地位。
 - 龙默 / 徐辰如何在移动狩猎中逼剑宗提前下水；
 - 小师妹安内制度与清净宗之变已经形成强 canon，后续重点转向具体事件、人物代价与正文呈现；
 - 郴竹、范野、小师妹的长期信任战已锁定核心逻辑，后续重点是设计几次真正有效、但不靠降智误会的具体交锋；
+- **东土当前主线已改为周影第一次真正入江湖引发的连锁风暴：白左使事件 → 极乐宫暗中借刀 → 南荆山自以为借极乐宫牵制逍遥峰 → 李家部分人物 / 九岭山部分怪人进一步利用极乐宫，并牵出中州剑宗；范野中后段重新入局并重塑气海。核心共同利益尚未锁死。**
 - 外部天下的独立利益链，确保剑宗内部秘法不是唯一剧情发动机。
 
 > **先把人养活。后面他们自己会惹事。**
