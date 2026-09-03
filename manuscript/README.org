@@ -1,0 +1,111 @@
+#+TITLE: 正文协作与审稿流程
+#+OPTIONS: toc:2 num:nil
+
+* 目录职责
+
+=manuscript/= 只保存小说正文；世界观、人物、专项设定与 Canon 继续放在 =docs/=。
+
+目录约定：
+
+#+begin_example
+manuscript/
+  README.org
+  01-tianxia-hunting/
+    001-city-beyond-walls.org
+    002-....org
+#+end_example
+
+- 一级目录按篇章 / 阶段编号。
+- 章节文件按正文顺序编号。
+- 正文只保留一份，不建立 draft / final 两套副本，避免内容分叉。
+- 正文统一使用 Org mode，方便直接在 Emacs 中创作和审稿。
+
+* 章节状态
+
+每个章节文件使用 Org TODO keyword 表示当前状态：
+
+#+begin_example
+#+TODO: DRAFT(d) REVIEW(r) REVISION(v) | FINAL(f)
+
+* REVIEW 第一章 城郭之外
+#+end_example
+
+状态含义：
+
+- =DRAFT=：AI / 作者正在创作，还没有提交审阅。
+- =REVIEW=：当前版本已经提交给用户，等待批注或审批。
+- =REVISION=：正在根据已有批注修改。
+- =FINAL=：用户已经明确批准，属于定稿候选；只有 FINAL 版本允许合并进 =main=。
+
+主流程：
+
+#+begin_example
+DRAFT -> REVIEW <-> REVISION -> FINAL
+#+end_example
+
+重要规则：
+
+- AI 不得自行把章节切换为 =FINAL=。
+- 只有用户明确表达“通过 / 定稿 / 可以合并 / 这一章批准”等意思后，AI 才能设置 =FINAL=。
+- =FINAL= 章节合并进 =main= 后，=main= 中的版本才是当前正式正文。
+- FINAL 后如需实质性改写，重新开 review 分支并退回 =REVIEW=。
+
+在 Emacs 中可直接用 =C-c C-t= 查看 / 切换 TODO 状态。
+
+* Git 审稿机制
+
+每一章或一组紧密连续章节使用独立审稿分支，例如：
+
+#+begin_example
+review/tianxia-hunting-ch01
+#+end_example
+
+并建立 Draft Pull Request。
+
+推荐两种批注方式，可混用：
+
+1. GitHub PR 的 *Files changed* 行评论：适合远程、逐行讨论，评论天然绑定版本和行号。
+2. Emacs 直接编辑 Org 文件：适合连续阅读时快速留下大量批注。
+
+* Org 批注约定
+
+本地批注统一使用普通 Org comment。它们不会进入正常导出正文，也很容易 grep：
+
+#+begin_example
+这一段正文。
+
+# REVIEW: 这里太刻意，范野不会这么说。
+# DELETE: 这一句删掉。
+# KEEP: 这个细节保留。
+# QUESTION: 五毒为什么敢在这里直接动手？
+# GLOBAL: 从这里开始整体节奏过快。
+#+end_example
+
+不要求批注者提供改写方案。“不对”“假”“太网文”“这里读着烦”都属于有效批注。
+
+约定关键词：
+
+- =# REVIEW:= 普通修改意见。
+- =# DELETE:= 倾向删除。
+- =# KEEP:= 明确保留，重写时不得误伤。
+- =# QUESTION:= 因果 / 逻辑疑问，需要先判断再改。
+- =# GLOBAL:= 影响一段或全章的整体意见。
+
+批注处理完成后，AI 可以删除已经解决的 Org comment；存在争议或尚未解决的批注必须保留。
+
+* 一轮审稿如何进行
+
+1. AI 在 review 分支整理正文，标题状态设为 =REVIEW=。
+2. 用户在 Emacs 中直接加入 =# REVIEW:= 等批注并 push，或在 PR 中逐行评论。
+3. 用户告诉 AI“批完了”。
+4. AI 拉取最新分支和 PR 评论，将状态改为 =REVISION=，按全部批注整体重写。
+5. 修改完成后回到 =REVIEW=，提交新 revision。
+6. 重复直到用户明确批准。
+7. 用户批准后，AI 设置为 =FINAL=，做一次 Canon / 连贯性 / 未解决批注检查。
+8. 无阻塞问题后合并 PR 到 =main=。
+
+* Canon 与正文
+
+- =docs/CANON_CURRENT.md= 与各专项 Canon 约束尚未定稿的正文。
+- =main= 中已经 FINAL 的正文也是事实来源。
+- 后续设定如果与定稿正文冲突，必须显式发现并决定修正文稿还是修正 Canon，不能静默覆盖。
